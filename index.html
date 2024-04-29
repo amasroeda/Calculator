@@ -1,0 +1,92 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+        <title>Calculator</title>
+        <link id="themeStylesheet" rel="stylesheet" href="mode1.css">
+    </head>
+    <body>
+        <main>
+        <form>
+            <header>
+                <h1>calc</h1>
+                <article>
+                    <div class="numbers">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                    </div>
+                    <div class="sliders">
+                        <p class = "theme">THEME</p>
+                        <input type="range" min="1" max="3" value="1" class="slider" id="modeSlider">
+                    </div>
+                </article>
+            </header>
+            <div class="output">
+                <input type="text" name="display" id="o">
+            </div>
+            <div class= grid>
+                <input type="button" value="7" class="GI W" onclick="addToDisplay('7')">
+                <input type="button" value="8" class="GI W" onclick="addToDisplay('8')">
+                <input type="button" value="9" class="GI W" onclick="addToDisplay('9')">
+                <input type="button" value="DEL" class="GI G I" onclick="addToDisplay('display.value.toString().slice(0,-1)')">
+
+                <input type="button" value="4" class="GI W" onclick="addToDisplay('4')">
+                <input type="button" value="5" class="GI W" onclick="addToDisplay('5')">
+                <input type="button" value="6" class="GI W" onclick="addToDisplay('6')">
+                <input type="button" value="+" class="GI W" onclick="addToDisplay('+')">
+
+                <input type="button" value="1" class="GI W" onclick="addToDisplay('1')">
+                <input type="button" value="2" class="GI W" onclick="addToDisplay('2')">
+                <input type="button" value="3" class="GI W" onclick="addToDisplay('3')">
+                <input type="button" value="-" class="GI W" onclick="addToDisplay('-')">
+
+
+                <input type="button" value="0" class="GI W" onclick="addToDisplay('0')">
+                <input type="button" value="." class="GI W" onclick="addToDisplay('.')">
+                <input type="button" value="*" class="GI W" onclick="addToDisplay('*')">
+                <input type="button" value="/" class="GI W" onclick="addToDisplay('/')">
+
+                <!-- <input type="button" value="RESET" class="GI G RESET" onclick="display.value = ''"> -->
+                <input type="button" value="RESET" class="GI G RESET" onclick="clearDisplay()">
+                <input type="button" value="=" onclick="display.value=eval(display.value)" class="GI B" >
+            </div> 
+            </form>
+        </main>
+        <script>
+
+            const modeSlider = document.getElementById('modeSlider');
+            const themeStylesheet = document.getElementById('themeStylesheet');
+            
+            modeSlider.addEventListener('input', function() {
+                const modeValue = this.value;
+                themeStylesheet.href = `mode${modeValue}.css`;
+            });
+
+            let displayValue = '';
+
+            function addToDisplay(input) {
+                const lastChar = displayValue.charAt(displayValue.length - 1);
+                if ((input === '+' || input === '-' || input === '*' || input === '/') && (lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/' || lastChar === '.')) {
+                    return;
+                }
+                if (input === '.' && lastChar === '.') {
+                    return;
+                }
+                displayValue += input;
+                document.getElementById('o').value = displayValue;
+            }
+            addToDisplay(input)
+
+            function clearDisplay() {
+                displayValue = '';
+                document.getElementById('o').value = '';
+            }
+        </script>
+    </body>
+</html>
