@@ -132,3 +132,263 @@ h1{
 .I{
     color: white;
 }
+@media only screen and (min-width: 319px) and (max-width: 330px){
+    form{
+        margin-top: 1rem;
+    }
+    header{
+        margin-bottom: 1rem;
+        margin-left: 0rem;
+    }
+    h1{
+        font-size: 25px;
+        margin-top: 0.5rem;
+    }
+    .numbers{
+        gap: 0.9rem;
+        margin-left: 3rem;
+        font-size: 10px;
+    }
+    .theme{
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 0.3rem;
+    }
+    .slider {
+        width: 2.5rem;
+        height: 1.4rem;
+    }
+    .slider::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px;
+    }
+    #o{
+        width: 17.5rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        font-size: 40px;
+    }
+    .grid{
+        grid-template-columns: repeat(4, 1.5rem);
+        row-gap: 1rem;
+        column-gap: 2.5rem;
+        width: 16rem;
+        padding: 1rem 1.6rem 1.5rem 0rem;
+    }
+    .GI{
+        font-size: 20px;
+        width: 3.5rem;
+        height: 2rem;
+    }
+    .G{
+        font-size: 18px;
+    }
+    .B{
+        width: 7.5rem;
+        height: 2rem;
+    }
+    .RESET{
+        width: 7.5rem;
+        height: 2rem;
+    }
+}
+@media only screen and (min-width: 331px) and (max-width: 395px){
+    form{
+        margin-top: 2rem;
+    }
+    header{
+        margin-bottom: 1.5rem;
+        margin-left: 0rem;
+    }
+    h1{
+        font-size: 25px;
+        margin-top: 0.5rem;
+    }
+    .numbers{
+        gap: 0.9rem;
+        margin-left: 3rem;
+        font-size: 10px;
+    }
+    .theme{
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 0.3rem;
+    }
+    .slider {
+        width: 2.5rem;
+        height: 1.4rem;
+    }
+    .slider::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px;
+    }
+    #o{
+        margin-top: 2rem;
+        width: 19.5rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+        font-size: 45px;
+    }
+    .grid{
+        grid-template-columns: repeat(4, 1.5rem);
+        row-gap: 1.2rem;
+        column-gap: 3rem;
+        width: 17rem;
+        padding: 1rem 2.4rem 1.5rem 0rem;
+    }
+    .GI{
+        font-size: 22px;
+        width: 4rem;
+        height: 2.5rem;
+    }
+    .G{
+        font-size: 18px;
+    }
+    .B{
+        width: 8.5rem;
+        height: 2rem;
+    }
+    .RESET{
+        width: 8.5rem;
+        height: 2rem;
+    }
+}
+@media only screen and (min-width: 396px) and (max-width: 428px){
+    form{
+        margin-top: 2.5rem;
+    }
+    header{
+        margin-bottom: 1.5rem;
+        margin-left: 0rem;
+    }
+    #o{
+        margin-top: 2.5rem;
+        width: 22rem;
+        height: 7.5rem;
+        margin-bottom: 2rem;
+        font-size: 45px;
+    }
+    .grid{
+        grid-template-columns: repeat(4, 1.5rem);
+        row-gap: 1.5rem;
+        column-gap: 3.5rem;
+        width: 19rem;
+        padding: 1rem 2.9rem 1.5rem 0rem;
+    }
+    .GI{
+        font-size: 22px;
+        width: 4.5rem;
+        height: 2.5rem;
+    }
+    .G{
+        font-size: 18px;
+    }
+    .B{
+        width: 9.5rem;
+        height: 2rem;
+    }
+    .RESET{
+        width: 9.5rem;
+        height: 2rem;
+    }
+}
+@media only screen and (min-width: 760px) and (max-width: 800px){
+    form{
+        margin-top: 3rem;
+    }
+    header{
+        margin-bottom: 1.5rem;
+        margin-left: 0rem;
+    }
+    h1{
+        font-size: 45px;
+        margin-top: 0rem;
+    }
+    .numbers{
+        font-size: 15px;
+        margin-left: 3.9rem;
+    }
+    .sliders{
+        display: flex;
+        gap: 0.4rem;
+    }
+    .theme{
+        font-size: 14px;
+    }
+    .slider {
+        width: 4rem;
+        height: 2rem;
+    } 
+    #o{
+        margin-top: 2.5rem;
+        width: 45rem;
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(4, 5rem);
+        row-gap: 2.5rem;
+        column-gap: 5.5rem;
+        width: 40rem; 
+        border-radius: 10px;
+        padding: 2rem 4.5rem 2rem 0.2rem;
+    }
+    .GI{
+        width: 9.5rem;
+        height: 3.5rem;
+        font-weight: 800;
+    }
+    .G{
+        font-size: 22px;
+    }
+    .B{
+        width: 20rem;
+        height: 3rem;
+    }
+    .RESET{
+        width: 20rem;
+        height: 3rem;
+    }
+    
+}
+@media only screen and (min-width: 1000px) and (max-width: 1120px){
+    form{
+        margin-top: 1.5rem;
+    }
+    header{
+        margin-bottom: 1.5rem;
+        margin-left: 0rem;
+    }
+    #o{
+        margin-top: 0.5rem;
+        width: 22rem;
+        height: 7.5rem;
+        margin-bottom: 2rem;
+        font-size: 45px;
+    }
+    .grid{
+        grid-template-columns: repeat(4, 1.5rem);
+        row-gap: 1.5rem;
+        column-gap: 3.5rem;
+        width: 19rem;
+        padding: 1rem 2.9rem 1.5rem 0rem;
+    }
+    .GI{
+        font-size: 22px;
+        width: 4.5rem;
+        height: 2.5rem;
+    }
+    .G{
+        font-size: 18px;
+    }
+    .B{
+        width: 9.5rem;
+        height: 2rem;
+    }
+    .RESET{
+        width: 9.5rem;
+        height: 2rem;
+    }
+    
+}

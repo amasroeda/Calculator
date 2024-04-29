@@ -34,7 +34,7 @@
                 <input type="button" value="7" class="GI W" onclick="addToDisplay('7')">
                 <input type="button" value="8" class="GI W" onclick="addToDisplay('8')">
                 <input type="button" value="9" class="GI W" onclick="addToDisplay('9')">
-                <input type="button" value="DEL" class="GI G I" onclick="addToDisplay('display.value.toString().slice(0,-1)')">
+                <input type="button" value="DEL" class="GI G I" onclick="clearLastCharacter()">
 
                 <input type="button" value="4" class="GI W" onclick="addToDisplay('4')">
                 <input type="button" value="5" class="GI W" onclick="addToDisplay('5')">
@@ -52,7 +52,6 @@
                 <input type="button" value="*" class="GI W" onclick="addToDisplay('*')">
                 <input type="button" value="/" class="GI W" onclick="addToDisplay('/')">
 
-                <!-- <input type="button" value="RESET" class="GI G RESET" onclick="display.value = ''"> -->
                 <input type="button" value="RESET" class="GI G RESET" onclick="clearDisplay()">
                 <input type="button" value="=" onclick="display.value=eval(display.value)" class="GI B" >
             </div> 
@@ -87,6 +86,11 @@
                 displayValue = '';
                 document.getElementById('o').value = '';
             }
+
+            function clearLastCharacter() {
+            displayValue = displayValue.slice(0, -1);
+            document.getElementById('o').value = displayValue;
+        }
         </script>
     </body>
 </html>
